@@ -63,6 +63,7 @@ g++ -std=c++17 src/*.cpp -Iinclude -o build/search.exe
 ./build/search.exe
 ```
 ##Project Structure
+```
 mini-search-engine/
 ├── data/
 │   ├── doc1.txt
@@ -81,6 +82,7 @@ mini-search-engine/
 │   └── search.exe
 ├── .gitignore
 └── README.md
+```
 
 **SAMPLE OUTPUT**
 Total documents indexed: 3
