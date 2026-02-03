@@ -57,10 +57,11 @@ The objective of this project is to understand and implement the internal workin
 ### Compile
 ```bash
 g++ -std=c++17 src/*.cpp -Iinclude -o build/search.exe
-
-```Run
+```
+##Run
+```bash
 ./build/search.exe
-
+```
 ##Project Structure
 mini-search-engine/
 ├── data/
