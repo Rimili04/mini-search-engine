@@ -85,14 +85,15 @@ mini-search-engine/
 ```
 
 **SAMPLE OUTPUT**
+```
 Total documents indexed: 3
 Enter search word: search
 
 Document 2 (score: 0.92)
 Document 1 (score: 0.45)
+```
 
-
-##Technical Concepts Used
+##**Technical Concepts Used**
 
 > C++ (STL, object-oriented programming, file handling)
 > Data Structures: unordered_map, vector, pair
@@ -100,7 +101,7 @@ Document 1 (score: 0.45)
 > Search engine fundamentals
 > Command-line application development
 
-**Design Decisions**
+##**Design Decisions**
 
 > Inverted index enables fast keyword lookup without scanning all documents
 > TF-IDF improves relevance-based ranking
@@ -108,16 +109,24 @@ Document 1 (score: 0.45)
 > Text-based interface keeps focus on backend logic
 > Clear separation of indexing, ranking, and query handling
 
-##Limitations
+##**Limitations**
 > Supports single-word queries only
 > No stop-word removal or stemming
 > No phrase or boolean queries
 > Command-line interface only
 
-##Future Improvements
+##**Future Improvements**
 
 > Multi-word and phrase search
 > Stop-word filtering and stemming
 > Boolean queries (AND, OR, NOT)
 > File-based persistence of index
 > Web or GUI-based interface
+
+---
+
+## Author
+**Rimili Dutta**  
+B.Tech (CSE) Student  
+GitHub: https://github.com/Rimili04
+
