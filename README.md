@@ -95,25 +95,25 @@ Document 1 (score: 0.45)
 
 ##**Technical Concepts Used**
 
-1> C++ (STL, object-oriented programming, file handling)
-2> Data Structures: unordered_map, vector, pair
-3> Algorithms: Inverted Index, TF-IDF
-4> Search engine fundamentals
-5> Command-line application development
+- C++ (STL, object-oriented programming, file handling)
+- Data Structures: unordered_map, vector, pair
+- Algorithms: Inverted Index, TF-IDF
+- Search engine fundamentals
+- Command-line application development
 
 ##**Design Decisions**
 
-1> Inverted index enables fast keyword lookup without scanning all documents
-2> TF-IDF improves relevance-based ranking
-3> Modular design improves readability and maintainability
-4> Text-based interface keeps focus on backend logic
-5> Clear separation of indexing, ranking, and query handling
+- Inverted index enables fast keyword lookup without scanning all documents
+- TF-IDF improves relevance-based ranking
+- Modular design improves readability and maintainability
+- Text-based interface keeps focus on backend logic
+- Clear separation of indexing, ranking, and query handling
 
 ##**Limitations**
-1> Supports single-word queries only
-2> No stop-word removal or stemming
-3> No phrase or boolean queries
-4> Command-line interface only
+- Supports single-word queries only
+- No stop-word removal or stemming
+- No phrase or boolean queries
+- Command-line interface only
 
 ##**Future Improvements**
 
