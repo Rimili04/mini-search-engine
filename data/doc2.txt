@@ -1,0 +1,1 @@
+search engines use inverted index and ranking algorithms
