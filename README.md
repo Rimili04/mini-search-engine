@@ -117,11 +117,11 @@ Document 1 (score: 0.45)
 
 ##**Future Improvements**
 
-1> Multi-word and phrase search
-2> Stop-word filtering and stemming
-3> Boolean queries (AND, OR, NOT)
-4> File-based persistence of index
-5> Web or GUI-based interface
+- Multi-word and phrase search
+- Stop-word filtering and stemming
+- Boolean queries (AND, OR, NOT)
+- File-based persistence of index
+- Web or GUI-based interface
 
 ---
 
