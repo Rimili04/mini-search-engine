@@ -1,19 +1,25 @@
 #include "indexer.h"
 #include <fstream>
+#include <iostream>
 #include <cctype>
+#include <unordered_map>
 
 void Indexer::buildIndex() {
-    std::string files[] = {
-        "data/doc1.txt",
-        "data/doc2.txt",
-        "data/doc3.txt"
-    };
+    std::ifstream listFile("data_clean/files.txt");
+    if (!listFile.is_open()) {
+        std::cerr << "Failed to open data_clean/files.txt\n";
+        return;
+    }
 
+    std::string filename;
     int docID = 0;
 
-    for (const std::string& fileName : files) {
-        std::ifstream file(fileName);
-        if (!file.is_open()) continue;
+    while (std::getline(listFile, filename)) {
+        std::ifstream file("data_clean/" + filename);
+        if (!file.is_open()) {
+            std::cerr << "Could not open: " << filename << "\n";
+            continue;
+        }
 
         std::unordered_map<std::string, int> wordCount;
         std::string word;
@@ -24,7 +30,7 @@ void Indexer::buildIndex() {
             wordCount[word]++;
         }
 
-        for (const auto& p : wordCount) {
+        for (const auto &p : wordCount) {
             invertedIndex[p.first].push_back({docID, p.second});
         }
 

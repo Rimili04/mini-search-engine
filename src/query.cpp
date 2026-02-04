@@ -1,26 +1,20 @@
 #include "query.h"
-#include "ranker.h"
 #include <iostream>
-#include <queue>
 
-void QueryEngine::search(
-    const std::string& query,
+void QueryEngine::search(const std::string& query,
     const std::unordered_map<std::string,
-        std::vector<std::pair<int,int>>>& index,
-    int totalDocs
-) {
-    Ranker ranker;
-    auto rankedDocs = ranker.rank(query, index, totalDocs);
+    std::vector<std::pair<int,int>>>& index,
+    int) {
 
-    std::priority_queue<std::pair<double,int>> pq;
-    for (auto r : rankedDocs) {
-        pq.push(std::make_pair(r.second, r.first));
+    auto it = index.find(query);
+    if (it == index.end()) {
+        std::cout << "No results found\n";
+        return;
     }
 
-    std::cout << "Search Results:\n";
-    while (!pq.empty()) {
-        std::cout << "DocID: " << pq.top().second
-                  << " Score: " << pq.top().first << "\n";
-        pq.pop();
+    std::cout << "Found in documents:\n";
+    for (auto &p : it->second) {
+        std::cout << "DocID: " << p.first
+                  << " Count: " << p.second << "\n";
     }
 }

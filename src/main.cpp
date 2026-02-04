@@ -7,7 +7,7 @@ int main() {
     indexer.buildIndex();
 
     std::cout << "Total documents indexed: "
-              << indexer.getTotalDocs() << std::endl;
+              << indexer.getTotalDocs() << "\n";
 
     QueryEngine engine;
     std::string query;
@@ -15,6 +15,8 @@ int main() {
     std::cout << "Enter search word: ";
     std::cin >> query;
 
-    engine.search(query, indexer.getIndex(), indexer.getTotalDocs());
+    engine.search(query, indexer.getIndex(),
+                  indexer.getTotalDocs());
     return 0;
 }
+
