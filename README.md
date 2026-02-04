@@ -123,7 +123,7 @@ Document 1 (score: 0.45)
 - File-based persistence of index
 - Web or GUI-based interface
 
----
+----
 
 ## Author
 **Rimili Dutta**  
