@@ -13,7 +13,7 @@ The objective of this project is to understand and implement the internal workin
 - Ranks documents based on relevance
 - Provides meaningful search results to users
 
----
+----
 ## Key Features
 
 - Indexes multiple text documents
@@ -23,7 +23,7 @@ The objective of this project is to understand and implement the internal workin
 - Modular C++ design with clear separation of responsibilities
 - Version controlled using Git and GitHub
 
----
+----
 ## How the System Works
 
 1. **Document Loading**  
