@@ -3,7 +3,7 @@
 This project implements a production-grade **mini search engine** in **C++** that indexes a collection of text documents and retrieves relevant results for user queries using efficient data structures and ranking techniques.
 The project focuses on core search engine fundamentals such as inverted indexing, query processing, and relevance-based ranking, similar to how real-world search systems operate at a foundational level.
 
----
+----
 ## Project Objective
 
 The objective of this project is to understand and implement the internal working of a search engine by building a complete end-to-end system that:
