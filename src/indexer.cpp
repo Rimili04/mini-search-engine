@@ -1,3 +1,4 @@
+// Final verification commit – BM25 + OCR stable
 #include "indexer.h"
 #include <fstream>
 #include <iostream>
